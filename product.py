@@ -12,3 +12,7 @@ while True:
 print(products)
 
 products[0][0] #拿products大清單第一個項目再拿p清單的第一個項目
+
+for p in products: #for loop就是印出清單每個項目
+    print(p)
+    print(p[0],'的價格是',p[1])
