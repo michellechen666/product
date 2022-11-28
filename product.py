@@ -16,3 +16,7 @@ products[0][0] #拿products大清單第一個項目再拿p清單的第一個項�
 for p in products: #for loop就是印出清單每個項目
     print(p)
     print(p[0],'的價格是',p[1])
+
+with open('product.csv','w') as f:
+    for p in products:
+        f.write(p[0] + ',' + p[1] + '\n') #用csv要分隔要用,隔開；\n表示換行
